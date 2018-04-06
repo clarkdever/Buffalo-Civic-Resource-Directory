@@ -41,6 +41,24 @@
           <ons-list-item ng-click="app.load('home.html')" tappable>
             Home
           </ons-list-item>
+          <ons-list-item ng-click="app.load('emergency.html')" tappable>
+            Emergency Services
+          </ons-list-item>
+          <ons-list-item ng-click="app.load('healthcare.html')" tappable>
+            Healthcare
+          </ons-list-item>          
+          <ons-list-item ng-click="app.load('education.html')" tappable>
+            Education
+          </ons-list-item>
+          <ons-list-item ng-click="app.load('community.html')" tappable>
+            Community
+          </ons-list-item>
+          <ons-list-item ng-click="app.load('democracy.html')" tappable>
+            Democracy
+          </ons-list-item>          
+          <ons-list-item ng-click="app.load('comfort.html')" tappable>
+            Comfort
+          </ons-list-item>
           <ons-list-item ng-click="app.load('settings.html')" tappable>
             Settings
           </ons-list-item>
@@ -52,7 +70,8 @@
     </ons-splitter-side>
     <ons-splitter-content page="home.html"></ons-splitter-content>
   </ons-splitter>
-
+  
+<!-- Home Screen -->
   <ons-template id="home.html">
     <ons-page>
       <ons-toolbar>
@@ -62,7 +81,7 @@
           </ons-toolbar-button>
         </div>
         <div class="center">
-          Buffalo Resource Finder
+          Good Neighbors
         </div>
       </ons-toolbar>
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
@@ -70,7 +89,104 @@
       </p>
     </ons-page>
   </ons-template>
+  
+<!-- Emergency Services Screen -->
+  <ons-template id="emergency.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="app.toggle()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Emergency Services
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </ons-template>
+  
+<!-- Healthcare Services Screen -->
+  <ons-template id="healthcare.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="app.toggle()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Healthcare
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </ons-template>
+  
+<!-- Education Screen -->
+  <ons-template id="education.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="app.toggle()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Education
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </ons-template>
 
+<!-- Community Screen -->
+  <ons-template id="community.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="app.toggle()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Community
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </ons-template>
+
+<!-- Democracy Screen -->
+  <ons-template id="democracy.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="app.toggle()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Democracy
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </ons-template>
+
+<!-- Comfort Screen -->
+  <ons-template id="comfort.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="app.toggle()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Comfort
+        </div>
+      </ons-toolbar>
+    </ons-page>
+  </ons-template>
+
+<!-- Settings Screen -->
   <ons-template id="settings.html">
     <ons-page>
       <ons-toolbar>
