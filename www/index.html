@@ -39,31 +39,76 @@
       <ons-page>
         <ons-list>
           <ons-list-item ng-click="app.load('home.html')" tappable>
-            Home
+              <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Home</span>
+              </div>
           </ons-list-item>
           <ons-list-item ng-click="app.load('emergency.html')" tappable>
-            Emergency Services
+              <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Emergency Services</span>
+              </div>
           </ons-list-item>
           <ons-list-item ng-click="app.load('healthcare.html')" tappable>
-            Healthcare
+                <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Healthcare</span>
+              </div>
           </ons-list-item>          
           <ons-list-item ng-click="app.load('education.html')" tappable>
-            Education
+                          <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Education</span>
+              </div>
           </ons-list-item>
           <ons-list-item ng-click="app.load('community.html')" tappable>
-            Community
+                <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Community</span>
+              </div>
           </ons-list-item>
           <ons-list-item ng-click="app.load('democracy.html')" tappable>
-            Democracy
+                          <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Democracy</span>
+              </div>
           </ons-list-item>          
           <ons-list-item ng-click="app.load('comfort.html')" tappable>
-            Comfort
+              <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Comfort</span>
+              </div>
           </ons-list-item>
           <ons-list-item ng-click="app.load('settings.html')" tappable>
-            Settings
+              <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">Settings</span>
+              </div>
           </ons-list-item>
           <ons-list-item ng-click="app.load('about.html')" tappable>
-            About
+              <div class="left">
+                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+              </div>
+              <div class="center">
+                <span class="list-item__title">About</span>
+              </div>
           </ons-list-item>
         </ons-list>
       </ons-page>
@@ -84,6 +129,21 @@
           Good Neighbors
         </div>
       </ons-toolbar>
+        <table class="tg">
+          <tr>
+            <th class="tg-hgcj" colspan="3">Good Neighbor Logo</th>
+          </tr>
+          <tr>
+            <td class="tg-baqh">Emergency</td>
+            <td class="tg-baqh">Healthcare</td>
+            <td class="tg-baqh">Education</td>
+          </tr>
+          <tr>
+            <td class="tg-baqh">Community</td>
+            <td class="tg-baqh">Democracy</td>
+            <td class="tg-baqh">Comfort</td>
+          </tr>
+        </table>
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
         Swipe right to open the menu!
       </p>
@@ -91,6 +151,7 @@
   </ons-template>
   
 <!-- Emergency Services Screen -->
+<!--http://www.city-buffalo.com/Home/Leadership/Mayor/Emergency_Contact_Numbers-->
   <ons-template id="emergency.html">
     <ons-page>
       <ons-toolbar>
@@ -103,6 +164,61 @@
           Emergency Services
         </div>
       </ons-toolbar>
+           <div id="header">
+              If you have an emergency please <a href="tel:911">Dial 9-1-1</a>
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Police Stations</h2>
+                    <p>
+                      <a href="https://www.google.com/maps/search/Buffalo+Police/">Click to find the station nearest you.</a>
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Fire Stations</h2>
+                    <p>
+                      <a href="https://www.google.com/maps/search/Buffalo+Fire+Department/">Click to find the station nearest you.</a>
+                    </p>
+                    <p>
+                      <strong>Fire safety</strong><br />
+                    When adding fuel to a space heater, or wood to a wood stove or fireplace, wear non-flammable gloves and clothing. Never add fuel to a space heater when it is hot. The fuel can ignite, burning you and your home. Keep the heater away from objects that can burn, such as furniture, rugs or curtains. If you have a fire extinguisher, keep it nearby. Be careful with candles-never leave them burning if you leave the room. Keep children away from space heaters, fireplaces and wood stoves to avoid accidental burns.
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Emergency Medical Services</h2>
+                    <p>Rural Metro Medical Services:  <a href="tel:1-716-882-8400">882-8400</a></p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Electrical</h2>
+                    <p>National Grid (Electric): <a href="tel:1-800-642-4272">1-800-642-4272</a><br />
+                      DO NOT TOUCH ANY DOWNED WIRES OR METAL NEAR DOWNED WIRES and avoid puddles near downed wires.  Remember power could come on suddenly, endangering you and your family.  Turn off all electrical devices until the power comes back on and do not enter a wet basement until you are sure it is safe.
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Gas</h2>
+                    <p> National Fuel (Gas): <a href="tel:1-800-444-3130">1-800-444-3130</a></p>
+                    <p><strong>Reporting a Gas Leak</strong><br />
+                   -Turn off the gas meter by turning the valve at right angles to the gas pipe.<br />
+                    -Open all windows and doors and keep them open until the leak is repaired.<br />
+                    -Don't smoke or use electrical switches, matches or naked flames.</p>
+                    <p><strong>Alternate Heating Sources</strong><br />
+                      If you use a fireplace, wood stove, or portable kerosene heater to stay warm, be sure there is adequate ventilation to the outside. Without enough fresh air, carbon monoxide fumes can build up in your home. Never use a natural gas or propane stove/oven to heat your home. If you are using a kerosene heater, use l-K grade kerosene only. Never substitute with fuel oil, diesel, gasoline or yellow (regular) kerosene. <br />
+                      Open a window to provide ventilation when a portable kerosene heater is in use to reduce carbon monoxide fumes inside the home. If you plan to cook on a barbecue grill or camp stove, remember these also produce carbon monoxide and are for outdoor use only<br />.
+                    </p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
   
