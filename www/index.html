@@ -40,7 +40,7 @@
         <ons-list>
           <ons-list-item ng-click="app.load('home.html')" tappable>
               <div class="left">
-                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="img/icon.png">
               </div>
               <div class="center">
                 <span class="list-item__title">Home</span>
@@ -48,7 +48,7 @@
           </ons-list-item>
           <ons-list-item ng-click="app.load('emergency.html')" tappable>
               <div class="left">
-                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="img/emergency.png">
               </div>
               <div class="center">
                 <span class="list-item__title">Emergency Services</span>
@@ -56,7 +56,7 @@
           </ons-list-item>
           <ons-list-item ng-click="app.load('healthcare.html')" tappable>
                 <div class="left">
-                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="img/healthcare.png">
               </div>
               <div class="center">
                 <span class="list-item__title">Healthcare</span>
@@ -64,7 +64,7 @@
           </ons-list-item>          
           <ons-list-item ng-click="app.load('education.html')" tappable>
                           <div class="left">
-                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="img/education.png">
               </div>
               <div class="center">
                 <span class="list-item__title">Education</span>
@@ -80,7 +80,7 @@
           </ons-list-item>
           <ons-list-item ng-click="app.load('democracy.html')" tappable>
                           <div class="left">
-                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="img/democracy.png">
               </div>
               <div class="center">
                 <span class="list-item__title">Democracy</span>
@@ -88,7 +88,7 @@
           </ons-list-item>          
           <ons-list-item ng-click="app.load('comfort.html')" tappable>
               <div class="left">
-                <img class="list-item__thumbnail" src="http://placekitten.com/g/40/40">
+                <img class="list-item__thumbnail" src="img/comfort.png">
               </div>
               <div class="center">
                 <span class="list-item__title">Comfort</span>
@@ -134,14 +134,14 @@
             <th class="tg-hgcj" colspan="3"><img src="img/logo.png" /></th>
           </tr>
           <tr>
-            <td class="tg-baqh"><img src="img/emergency.png"><br />Emergency</td>
-            <td class="tg-baqh"><img src="img/healtchare.png"><br />Healthcare</td>
-            <td class="tg-baqh"><img src="img/education.png"><br />Education</td>
+            <td class="tg-baqh" ng-click="app.load('emergency.html')" tappable><img src="img/emergency.png"><br />Emergency</td>
+            <td class="tg-baqh" ng-click="app.load(healthcare.html')" tappable><img src="img/healthcare.png"><br />Healthcare</td>
+            <td class="tg-baqh" ng-click="app.load('education.html')" tappable><img src="img/education.png"><br />Education</td>
           </tr>
           <tr>
-            <td class="tg-baqh"><img src="img/community.png"><br />Community</td>
-            <td class="tg-baqh"><img src="img/democracy.png"><br />Democracy</td>
-            <td class="tg-baqh"><img src="img/comfort.png"><br />Comfort</td>
+            <td class="tg-baqh" ng-click="app.load('community.html')" tappable><img src="img/community.png"><br />Community</td>
+            <td class="tg-baqh" ng-click="app.load('democracy.html')" tappable><img src="img/democracy.png"><br />Democracy</td>
+            <td class="tg-baqh" ng-click="app.load('comfort.html')" tappable><img src="img/comfort.png"><br />Comfort</td>
           </tr>
         </table>
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
@@ -235,6 +235,34 @@
           Healthcare
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
   
@@ -251,12 +279,40 @@
           Education
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
 
 <!-- Community Screen -->
   <ons-template id="community.html">
-    <ons-page>
+     <ons-page>
       <ons-toolbar>
         <div class="left">
           <ons-toolbar-button ng-click="app.toggle()">
@@ -267,12 +323,40 @@
           Community
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
 
 <!-- Democracy Screen -->
   <ons-template id="democracy.html">
-    <ons-page>
+      <ons-page>
       <ons-toolbar>
         <div class="left">
           <ons-toolbar-button ng-click="app.toggle()">
@@ -280,15 +364,43 @@
           </ons-toolbar-button>
         </div>
         <div class="center">
-          Democracy
+         Democracy
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
 
 <!-- Comfort Screen -->
   <ons-template id="comfort.html">
-    <ons-page>
+      <ons-page>
       <ons-toolbar>
         <div class="left">
           <ons-toolbar-button ng-click="app.toggle()">
@@ -299,12 +411,40 @@
           Comfort
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
 
 <!-- Settings Screen -->
   <ons-template id="settings.html">
-    <ons-page>
+      <ons-page>
       <ons-toolbar>
         <div class="left">
           <ons-toolbar-button ng-click="app.toggle()">
@@ -315,11 +455,39 @@
           Settings
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
 
   <ons-template id="about.html">
-    <ons-page>
+      <ons-page>
       <ons-toolbar>
         <div class="left">
           <ons-toolbar-button ng-click="app.toggle()">
@@ -327,9 +495,37 @@
           </ons-toolbar-button>
         </div>
         <div class="center">
-          About
+          About Us
         </div>
       </ons-toolbar>
+           <div id="header">
+           </div>
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 1</h2>
+                    <p>
+                      Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 2</h2>
+                    <p>
+                        Content
+                    </p>
+                </li>
+                <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h2>Item 3</h2>
+                    <p></p>
+                </li>
+            </ul>
+        </div>
     </ons-page>
   </ons-template>
 </body>
