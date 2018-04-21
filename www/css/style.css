@@ -187,12 +187,17 @@ li {
 
 /* Home Page Table formatting */
   table.center {
-    width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+    width:80%; 
+    margin-left:10%; 
+    margin-right:10%;
   }
 .tg  {border-collapse:collapse;border-spacing:0;border:none;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
 .tg .tg-baqh{text-align:center;vertical-align:top}
 .tg .tg-hgcj{font-weight:bold;text-align:center}
+
+img.homescreen {
+/*  height: 100%; */
+  width: 100%;
+}
